@@ -1,0 +1,23 @@
+<div class="min-h-screen bg-gray-100 flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex items-center justify-between">
+    <button
+      (click)="logout()"
+      class="text-red-600 font-semibold hover:underline"
+    >
+      Logout
+    </button>
+    <h1 class="text-lg font-bold text-gray-700">Dashboard</h1>
+    <div class="text-blue-600 font-medium">Hello, {{ username }}</div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="flex-grow flex items-center justify-center">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Welcome!</h2>
+      <p class="text-lg text-gray-600">
+        You have successfully logged in using Sign Up / Login
+      </p>
+    </div>
+  </main>
+</div>
